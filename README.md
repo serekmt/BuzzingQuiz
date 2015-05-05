@@ -1,9 +1,10 @@
 # BuzzingQuiz
 Accademy client app project.
 
-
-Team Members:
-Agnieszka Zalewska
-Michal Twarowski
-Damian Korzeniowski
-Emilian Dudek
+Team Members:<br>
+<ul>
+<li>Agnieszka Zalewska</li>
+<li>Michal Twarowski</li>
+<li>Damian Korzeniowski</li>
+<li>Emilian Dudek</li>
+<ul/>
