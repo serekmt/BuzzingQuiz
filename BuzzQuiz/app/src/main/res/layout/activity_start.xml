@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.quiz.buzzquiz.StartActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/startActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/name2"
+        android:src="@mipmap/napis1" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:inputType="textPersonName"
+        android:hint="Login"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/LoginEditText"
+        android:background="#ffd9d9d9" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dalej"
+        android:id="@+id/LogIn"
+        android:background="#ffbe2c31"
+        android:backgroundTint="#ffbe2c31"
+        android:textColor="#ffffffff"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:onClick="LogInButtonClicked"/>
+
+</LinearLayout>

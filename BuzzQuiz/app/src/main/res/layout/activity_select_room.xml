@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.quiz.buzzquiz.SelectRoomActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/napis_nowy"
+        android:src="@mipmap/wyborpokoju" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj nowy"
+        android:id="@+id/button4"
+        android:background="#ffbe2c31"
+        android:backgroundTint="#ffbe2c31"
+        android:textColor="#ffffffff"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:onClick="NewRoomButtonClicked"/>
+
+
+    <ScrollView android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/avalableRooms"
+            >
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
