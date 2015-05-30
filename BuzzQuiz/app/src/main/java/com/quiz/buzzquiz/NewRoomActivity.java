@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.octo.android.robospice.persistence.exception.SpiceException;
 import com.octo.android.robospice.request.listener.RequestListener;
 import com.quiz.buzzquiz.Models.AppDataSingleton;
+import com.quiz.buzzquiz.Models.Player;
 import com.quiz.buzzquiz.Models.Room;
 import com.quiz.buzzquiz.Network.InternetActivity;
 import com.quiz.buzzquiz.Network.Requests.AddRoomRequest;
@@ -109,8 +110,9 @@ public class NewRoomActivity extends InternetActivity {
     private void LeaveCurrentRoom() {
 
         Room room = AppDataSingleton.getInstance().getCurrentRoom();
+        Player player = AppDataSingleton.getInstance().getCurrentPlayer();
 
-        LeaveRoomRequest roomRequest = new LeaveRoomRequest(room.Name);
+        LeaveRoomRequest roomRequest = new LeaveRoomRequest(room.Name, player.Credentials, true);
 
         spiceManager.execute(roomRequest, new RequestListener<String>() {
             @Override
